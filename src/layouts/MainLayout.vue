@@ -19,10 +19,9 @@
 
     <q-drawer
         v-model="leftDrawerOpen"
-        show-if-above
         bordered
     >
-      <q-list>
+      <q-list separator>
         <q-item v-for="item in drawerContext" :to="item.url">
           <q-item-section>
             <q-icon :name="item.icon"/>
